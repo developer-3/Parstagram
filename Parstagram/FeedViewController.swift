@@ -12,6 +12,7 @@ import AlamofireImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [PFObject]()
@@ -40,6 +41,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(posts.count)
         return posts.count
         
         
